@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  margin: auto;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.infor {
+  display: flex;
+  padding: 10px 90px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  height: 65px;
+  align-items: center;
+}
+.btn-search:hover {
+  color: #000;
+  background-color: #a2a2a2;
+}
+.bg-gray {
+  background-color: #e6e3e3ea;
+}
+
+.custom-object-fit {
+  height: 500px; /* Điều chỉnh độ cao tùy ý */
+  object-fit: cover;
+}
+
+.sliderr {
+  width: 80%;
+  margin-left: 150px;
+  z-index: 9999;
+  padding-top: 30px;
+}
+
+.banner-sale {
+  width: 100%;
+  filter: brightness(41%);
+}
